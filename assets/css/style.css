@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*definimos los colores como variables*/
+:root {
+    --white: #f9f9f9;
+    --brown: #4a362f;
+    --orange: #ffa227;
+    --brown-light: #b7ae8f;
+    --grey-dark: #978f84;
+    --grey: #d9d9db;
+    --black: #000000;
+}
+
+body{
+    background: var(--brown-light);
+    font-family: 'Patrick Hand', cursive;
+}
+
+main{
+    margin: 1em;
+}
+
+header, footer{
+    background: var(--black);
+    color: var(--white);
+}
+
+footer{
+    padding: 1em;
+}
+
+#container-logo{
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+}
+
+#logo{
+    width: 85%;
+}
+
+.btn-nav:hover{
+    color: var(--orange);
+}
+
+/*---------- Mobile First (0-390) ----------*/
+/*---------- Inicio configuracion ----------*/
+#container-nav{
+    margin: 0.5em 0;
+    padding: 0.5em;
+}
+
+#container-nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#container-nav ul li{
+    list-style: none;
+}
+
+main >p{
+    font-size: 1.2em;
+}
+
+#root{
+    margin: 1em;
+}
+
+#root .card{
+    width: 100%;
+    margin: 1em 0;
+    border: 0.15em solid var(--brown);
+    border-radius: 5px;
+    background:var(--white);
+}
+
+#root .card:hover{
+    border: 0.3em solid var(--orange);
+}
+
+#root .card .card-image{
+    overflow: hidden;
+}
+
+#root .card .card-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 2px 2px 0px 0px;
+    transition: all 1s ease;
+}
+
+#root .card .card-image img:hover{
+    filter: grayscale(100%);
+    transform:scale(1.30);
+}
+
+#root .card .card-content{
+    margin: 1em;
+    
+}
+
+#root .card .card-content .detail-bold{
+    font-weight: bold;
+}
+
+#root .card .card-content p{
+    margin: 0.2em 0;
+}
+
+#root .card .card-link{
+    border-top: 0.1em solid var(--grey);
+    padding: 0.8em 0;
+}
+
+#root .card .card-link a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--orange);
+    margin: 0.8em;    
+}
+
+.container-paginador{
+    text-align: center;
+}
+
+.container-paginador >p{
+    margin: 0.6em 0;
+}
+
+
+.container-paginador .pagination button{
+    padding: 0.5em;
+    border-radius: 5px;
+    border-color: var(--brown);
+    font-weight: bold;
+}
+
+.container-paginador .pagination button:hover{
+    background: var(--brown);
+    color: var(--white);
+    
+}
+
+.footer-content{
+    text-align: center;
+
+}
+
+.footer-content >p{
+    margin: 0 0 0.8em 0;
+}
+/*---------- Fin configuracion -------------*/
+/*---------------------------------------------------------------------------------*/
+/*---------- Configuraciones responsives ----------*/
+/*---------- Inicio configuracion ----------*/
+@media (min-width: 650px){
+
+    #container-nav ul{
+        padding: 0 2em;
+        justify-content: space-around;
+    }
+
+    #container-nav ul li{
+        font-size: 1.2em;
+    }
+
+    #root{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    #root .card{
+        width:48%;
+    }
+}
+
+
+@media (min-width: 950px){
+
+    #container-nav ul{
+        padding: 0 5em;
+
+    }
+
+    #root .card{
+        width:31%;
+    }
+
+}
+
+@media (min-width: 1100px){
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    #container-logo{
+        padding: 1em;
+        width: 40%;
+        text-align: left;
+    }
+    
+    #logo{
+        width: 100%;
+    }
+
+    #root .card{
+        width:23%;
+    }
+}
+
+/*---------- Fin configuracion -------------*/

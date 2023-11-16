@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TF - Rick and Morty</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="container-logo">
+            <img src="./assets/img/logo_1.png" alt="logo" id="logo">
+        </div>
+        <nav id="container-nav">
+            <ul>
+                <li class="btn-nav" id="todos">TODOS</li>
+                <li class="btn-nav" id="mujeres">MUJERES</li>
+                <li class="btn-nav" id="hombres">HOMBRES</li>
+                <li class="btn-nav" id="sinGenero">SIN GENERO</li>
+                <li class="btn-nav" id="noSeSabe">NO SE SABE</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>Total de personajes: <span id="total-personajes"></span></p>
+        <div id="root">
+        </div>
+        <div class="container-paginador">
+            <p>Pagina actual: <span id="pagina-actual"></span></p>
+            <p>Total de paginas: <span id="total-paginas"></span></p>
+            <div class="pagination">
+                <button id="first-page">Primera</button>
+                <button id="prev-page"> - </button>
+                <button id="next-page"> + </button>
+                <button id="last-page">Ultima</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>TP - Final CURSO FRONT END ADA + Plug IT</p>
+            <p>Realizado por Maximiliano Jose Camargo (2023)</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
